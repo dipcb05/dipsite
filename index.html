@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="frontend developer">
+    <meta name="author" content="dip chakraborty">
+    <title>Dip Chakraborty - Personal Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <style>
+      :root {
+        --bg-color: #ffffff;
+        --text-color: #000000;
+        --heading-color: #333333;
+        --link-color: #bd5d38;
+        --link-hover-color: #824027;
+      }
+
+      [data-theme="dark"] {
+        --bg-color: #333333;
+        --text-color: #ffffff;
+        --heading-color: #f8f9fa;
+        --link-color: #ff7c5a;
+        --link-hover-color: #bd5d38;
+      }
+
+      body {
+        font-family: 'Open Sans', serif;
+        padding-top: 54px;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Saira Extra Condensed', serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--heading-color);
+      }
+
+      a {
+        color: var(--link-color);
+      }
+
+      a:active, a:focus, a:hover {
+        color: var(--link-hover-color);
+      }
+      #theme-toggle {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+      }
+      @media (min-width: 992px) {
+        body {
+            padding-top: 0;
+            padding-left: 17rem;
+        }
+      }
+
+      h1 {
+        font-size: 6rem;
+        line-height: 5.5rem;
+      }
+
+      h2 {
+        font-size: 3.5rem;
+      }
+
+      .subheading {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: 'Saira Extra Condensed', serif;
+        font-size: 1.35rem;
+      }
+
+      .list-social-icons a {
+        color: #495057;
+      }
+
+      .list-social-icons a:hover {
+        color: #bd5d38;
+      }
+
+      .list-social-icons a .fa-lg {
+        font-size: 1.75rem;
+      }
+
+      .list-icons {
+        font-size: 3rem;
+      }
+
+      .list-icons .list-inline-item i:hover {
+        color: #bd5d38;
+      }
+
+      #sideNav .navbar-nav .nav-item .nav-link {
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      @media (min-width: 992px) {
+        #sideNav {
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            width: 17rem;
+            height: 100vh;
+        }
+
+        #sideNav .navbar-brand {
+            display: flex;
+            margin: auto auto 0;
+            padding: .5rem;
+        }
+
+        #sideNav .navbar-brand .img-profile {
+            max-width: 10rem;
+            max-height: 10rem;
+            border: .5rem solid rgba(255, 255, 255, .2);
+        }
+
+        #sideNav .navbar-collapse {
+            display: flex;
+            align-items: flex-start;
+            flex-grow: 0;
+            width: 100%;
+            margin-bottom: auto;
+        }
+
+        #sideNav .navbar-collapse .navbar-nav {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        #sideNav .navbar-collapse .navbar-nav .nav-item {
+            display: block;
+        }
+
+        #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+            display: block;
+        }
+      }
+
+      section.resume-section {
+        border-bottom: 1px solid #dee2e6;
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+      }
+
+      section.resume-section .resume-item .resume-date {
+        min-width: none;
+      }
+
+      @media (min-width: 768px) {
+        section.resume-section {
+            min-height: 100vh;
+        }
+
+        section.resume-section .resume-item .resume-date {
+            min-width: 18rem;
+        }
+      }
+
+      @media (min-width: 992px) {
+        section.resume-section {
+            padding-top: 3rem !important;
+            padding-bottom: 3rem !important;
+        }
+      }
+      .bg-primary {
+        background-color: #bd5d38 !important;
+      }
+      .text-primary {
+        color: #bd5d38 !important;
+      }
+    </style>
+  </head>
+
+  <body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Personal Website</span>
+        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://dl.dropboxusercontent.com/scl/fi/xqj1zof1kx9oo63573ogs/dip.jpg?rlkey=kr80nbybz36bvpiu0t73ld3z9&st=q3tq8ozt" alt=""></span>
+      </a>
+      <button class="navbar-toggler" 
+              type="button" 
+              data-toggle="collapse" 
+              data-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+        </ul>
+      </div>
+    </nav>
+    <button id="theme-toggle" title="Toggle theme">🌞</button>
+    <div class="container-fluid p-0">
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0"><span class="text-primary">Dip</span> Chakraborty</h1>
+          <div class="subheading mb-5">Dhaka, Bangladesh</div>
+          <p class="mb-5">Confident | Active Learner | Research Lover | Problem Solver</p>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a target="_blank" href="https://facebook.com/dipcb05">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://instagram.com/dipcb05">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://github.com/dipcb05">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://linkedin.com/in/dipcb05">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Experience</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Executive</h3>
+              <div class="subheading mb-3">UIU Robotics</div>
+              <p>Working on multiple robotics projects and hand to hand experience on esp32, arduino</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">March 2018 - Present</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">United International University</h3>
+              <div class="subheading mb-3">Bachelor of Science</div>
+              <div>Computer Science & Engineering</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Oct 2017 - Running</span>
+            </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Daffodil International College</h3>
+              <div class="subheading mb-3">Higher Secondary</div>
+              <div>Science</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">August 2014 - May 2016</span>
+            </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Rayer Bazar High School</h3>
+              <div class="subheading mb-3">School Secondary</div>
+              <div>Science</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">January 2009 - May 2014</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item"><i class="devicon-html5-plain"></i></li>
+            <li class="list-inline-item"><i class="devicon-css3-plain"></i></li>
+            <li class="list-inline-item"><i class="devicons devicons-bootstrap"></i></li>
+            <li class="list-inline-item"><i class="devicon-javascript-plain"></i></li>
+            <li class="list-inline-item"><i class="devicon-php-plain"></i></li>
+            <li class="list-inline-item"><i class="devicon-wordpress-plain"></i></li>
+            <li class="list-inline-item"><i class="devicon-laravel-original"></i></li>
+            <li class="list-inline-item"><i class="devicon-arduino-plain"></i></li>
+            <li class="list-inline-item"><i class="devicon-git-plain"></i></li>
+            <li class="list-inline-item"><i class="devicon-linux-plain"></i></li>
+          </ul>
+
+          <div class="subheading mb-3">Development Plans</div>
+          <ul class="fa-ul mb-0">
+            <li><i class="fa-li fa fa-check"></i>WebApp Development</li>
+            <li><i class="fa-li fa fa-check"></i>Mobile App Development</li>
+            <li><i class="fa-li fa fa-check"></i>Electrical System development</li>
+          </ul>
+        </div>
+      </section>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="my-auto">
+          <h2 class="mb-5">Awards &amp; Certifications</h2>
+          <ul class="fa-ul mb-0">
+            <li><i class="fa-li fa fa-trophy text-warning"></i>Global Round - Google Hashcode 2018</li>
+            <li><i class="fa-li fa fa-trophy text-warning"></i>5<sup>th</sup> Place - UIU Computer Club's Coding Combat 2018</li>
+            <li><i class="fa-li fa fa-trophy text-warning"></i>5<sup>th</sup>Place - BUET Robo Carnival 2019</li>
+            <li><i class="fa-li fa fa-trophy text-warning"></i>2<sup>nd</sup> - MIST Robofest Soccerbot Competition 2019</li>
+            <li><i class="fa-li fa fa-trophy text-warning"></i>1<sup>st</sup>Place - UIU IEEE Day Soccerbot Championship 2018</li><li>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/8979713471.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script>
+    (function($) {
+        "use strict";
+        $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+            if (
+                location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") &&
+                location.hostname == this.hostname
+            ) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000, "easeInOutExpo");
+                    return false;
+                }
+            }
+        });
+        $('.js-scroll-trigger').click(function() {
+            $('.navbar-collapse').collapse('hide');
+        });
+        $('body').scrollspy({
+            target: '#sideNav'
+        });
+    })(jQuery);
+    </script>
+    <script>
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+      }
+      function updateIcon() {
+          const currentTheme = document.documentElement.getAttribute('data-theme');
+          document.getElementById('theme-toggle').textContent = currentTheme === 'dark' ? '🌜' : '🌞';
+      }
+      function toggleTheme() {
+          const currentTheme = document.documentElement.getAttribute('data-theme');
+          const newTheme = currentTheme === 'dark' ? '' : 'dark';
+          document.documentElement.setAttribute('data-theme', newTheme);
+          localStorage.setItem('theme', newTheme);
+          updateIcon();
+      }
+      document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+      updateIcon();
+    </script>
+  </body>
+</html>
